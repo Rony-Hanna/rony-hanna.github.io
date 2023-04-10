@@ -1,2 +1,1 @@
-# rony-hanna.github.io
-Personal site
+# RonyHanna.github.io

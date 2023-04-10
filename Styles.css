@@ -1,0 +1,225 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, P
+{
+    color: white;
+}
+
+a
+{
+    text-decoration: none;
+    color: orange;
+}
+
+body 
+{
+	margin: 0;
+    background-repeat: no-repeat;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#about-me 
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 10%;
+	min-height: 50vh;
+	line-height: 1.5;
+	padding-bottom: 1%;
+    max-width: 1200px;
+	margin: 0 auto;
+}
+
+#about-me::before 
+{
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url("Images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+
+#about-me h1 
+{
+	font-size: 30px;
+	line-height: 2.0;
+}
+
+#about-me p 
+{
+	text-align: justify;
+	font-size: 2vh;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) 
+{
+  #about-me 
+  {
+    padding: 0 5%;
+    padding-bottom: 4%;
+  }
+}
+
+#sectionA-Title, #sectionB-Title
+{
+    font-size: 30px;
+    line-height: 1.7;
+    background-color: midnightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    color: white;
+}
+
+#sectionA-Content
+{
+	background-color: rgb(7, 11, 52);
+	background-size: cover;
+	background-position: center;
+	padding: 2% 5%;
+}
+
+#sectionB-Content
+{
+	background-color: rgb(0, 10, 26);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5% 10%;
+	min-height: 10vh;
+}
+
+.GameTitle
+{
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    line-height: 2.0;
+}
+
+.GameDownload
+{
+    font-size: 11px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    line-height: 2.0;
+}
+
+.row 
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 50px;
+	grid-row-gap: 50px;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.box 
+{
+    width: 300px;
+    min-width: 300px;
+    padding: 25px 50px;
+    position: relative;
+    border-radius: 25px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.box:hover 
+{
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.box img
+{
+	transition: all 0.3s ease-in-out;
+  	width: 100%;
+  	height: auto;
+}
+
+.box:hover img 
+{
+	transform: scale(1.1);
+}
+
+.container
+{
+    width: 100%;
+    border-radius: 2.0em;
+    overflow: hidden;
+}
+
+footer 
+{
+	text-align: center;
+}
+
+.contact p 
+{
+	margin: 0 0 10px;
+  	padding-top: 15px;
+}
+
+.social-icons 
+{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.social-icons li 
+{
+	margin: 0 0px;
+}
+
+.social-icons a 
+{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 34px;
+}
+
+.icon-github 
+{
+	background-image: url("Images/GithubIcon.png");
+}
+
+.icon-linkedin 
+{
+	background-image: url("Images/LinkedInIcon.png");
+}
+
+.copyRight p 
+{
+	margin: 0;
+	font-size: 14px;
+	padding-bottom: 15px;
+}
