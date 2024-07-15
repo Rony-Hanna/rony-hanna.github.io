@@ -1,225 +1,135 @@
-*
-{
+body, h1, h2, h3, p, a {
     margin: 0;
     padding: 0;
 }
 
-h1, P
-{
-    color: white;
-}
-
-a
-{
-    text-decoration: none;
-    color: orange;
-}
-
-body 
-{
-	margin: 0;
-    background-repeat: no-repeat;
-    font-family: Verdana, Arial, sans-serif;
-}
-
-#about-me 
-{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 0 10%;
-	min-height: 50vh;
-	line-height: 1.5;
-	padding-bottom: 1%;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    padding: 20px;
     max-width: 1200px;
-	margin: 0 auto;
+    margin: auto;
 }
 
-#about-me::before 
-{
-	content: "";
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: url("Images/background.jpg");
-	background-size: cover;
-	background-position: center;
-	z-index: -1;
+h1, h2, h3 {
+    color: #fff;
 }
 
-#about-me h1 
-{
-	font-size: 30px;
-	line-height: 2.0;
-}
-
-#about-me p 
-{
-	text-align: justify;
-	font-size: 2vh;
-	max-width: 800px;
-	margin: 0 auto;
-}
-
-@media only screen and (max-width: 768px) 
-{
-  #about-me 
-  {
-    padding: 0 5%;
-    padding-bottom: 4%;
-  }
-}
-
-#sectionA-Title, #sectionB-Title
-{
-    font-size: 30px;
-    line-height: 1.7;
-    background-color: midnightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
     text-align: center;
-    padding: 0 30px;
-    color: white;
+    margin-bottom: 50px;
+    color: #fff;
 }
 
-#sectionA-Content
-{
-	background-color: rgb(7, 11, 52);
-	background-size: cover;
-	background-position: center;
-	padding: 2% 5%;
+.about-img {
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 20px 0;
 }
 
-#sectionB-Content
-{
-	background-color: rgb(0, 10, 26);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 5% 10%;
-	min-height: 10vh;
+header p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
 }
 
-.GameTitle
-{
-    font-size: 15px;
-    justify-content: center;
+header p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+#projects, #game-jams {
+    margin-bottom: 50px;
+}
+
+h2 {
     text-align: center;
-    color: white;
-    line-height: 2.0;
+    margin-bottom: 30px;
 }
 
-.GameDownload
-{
-    font-size: 11px;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    line-height: 2.0;
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.row 
-{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 50px;
-	grid-row-gap: 50px;
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
+.project-card {
+    background: hsl(0, 0%, 20%, 1.0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.box 
-{
-    width: 300px;
-    min-width: 300px;
-    padding: 25px 50px;
-    position: relative;
-    border-radius: 25px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-}
-
-.box:hover 
-{
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.box img
-{
-	transition: all 0.3s ease-in-out;
-  	width: 100%;
-  	height: auto;
-}
-
-.box:hover img 
-{
-	transform: scale(1.1);
-}
-
-.container
-{
+.project-card img {
     width: 100%;
-    border-radius: 2.0em;
-    overflow: hidden;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-footer 
-{
-	text-align: center;
+.project-card h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
 }
 
-.contact p 
-{
-	margin: 0 0 10px;
-  	padding-top: 15px;
+.project-card p {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 15px;
 }
 
-.social-icons 
-{
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-	padding: 0;
+.project-card .links a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.social-icons li 
-{
-	margin: 0 0px;
+.project-card .links a:hover {
+    text-decoration: underline;
 }
 
-.social-icons a 
-{
-	display: block;
-	width: 40px;
-	height: 40px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 34px;
+body::before, #projects::before, #game-jams::before, footer::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+	background-color: rgba(0, 0, 0, 0.15); /* Dark overlay */
+    z-index: -1;
 }
 
-.icon-github 
-{
-	background-image: url("Images/GithubIcon.png");
+body::before {
+    background-image: url("Images/Background.jpg");
 }
 
-.icon-linkedin 
-{
-	background-image: url("Images/LinkedInIcon.png");
+footer {
+    text-align: center;
+    margin-top: 50px;
 }
 
-.copyRight p 
-{
-	margin: 0;
-	font-size: 14px;
-	padding-bottom: 15px;
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer p {
+	color: #fff;
+    font-size: 1.2em;
+}
+
+footer p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }

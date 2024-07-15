@@ -1,186 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Rony Hanna is a software engineer and game programmer."
-    />
-    <meta
-      name="keywords"
-      content="Rony, Hanna, software engineer, game programmer, C++, C#, OpenGL, Unity, Vulkan"
-    />
+    <meta name="description" content="Rony Hanna is a software engineer and game programmer." />
+    <meta name="keywords" content="Rony, Hanna, software engineer, game programmer, C++, C#, OpenGL, Unity, Vulkan" />
     <title>Rony's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="Styles.css" />
 </head>
-
 <body>
-<section id="about-me">
-  <h1>About Me</h1>
-  <p>
-	I am a software engineer with extensive experience in computer graphics and game programming. 
-	Throughout my career, I have created tools, gameplay features, and user interfaces using popular 
-	engines such as Unity and Unreal. I have also developed custom game engines using APIs 
-	such as OpenGL and Vulkan. I enjoy participating in game jams and have showcased some of my work 
-	<a href="#gamejams">here</a>. Currently, I work as a Software Engineer at Mytona in New Zealand. Please take a 
-	moment to view some of my <a href="#projects">projects</a> or contact me to learn more about my 
-	experience and discuss any potential opportunities.
-  </p>
-</section>
-
-    <section id = "sectionA-Title"><a name="projects"></a> Projects</section>
-    <section id = "sectionA-Content">
-        <div class="row">
-            <div class="box">
-                <div class="container">
-                    <a href="https://www.youtube.com/watch?v=HsNVl4pKtI4" target="_blank"><img src="Images/PathfinderVulkan.png" class="container" alt="First-person shooter preview"></a>
+    <header id="about-me">
+        <h1>About Me</h1>
+        <img src="Images/ProfilePicture.jpg" class="about-img" alt="profile picture">
+        <p>Hello and welcome to my website! My name is Rony Hanna, I'm a passionate Software Engineer specializing in computer graphics and game programming. I'm part of the talented team at Mytona in New Zealand. <br /><br />Throughout my career, I've developed various tools, gameplay features, and user interfaces using popular engines like Unity and Unreal. Additionally, I have created games from scratch using C++ and OpenGL. In my spare time, I'm developing a powerful and robust game engine in C++ and Vulkan, which you can explore <a href="https://github.com/Rony-Hanna/Banshee.git" target="_blank"><strong>here!</strong></a> <br /><br />My favorite skill is learning and continuously improving my skills. I love problem-solving and working on fun projects. I'd be happy for you to explore my portfolio and am always open to discussing my experiences and any exciting opportunities. Feel free to reach out!</p>
+    </header>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="Images/Outfire.jpg" alt="Outfire: Battle Royale">
+                <h3>Outfire: Battle Royale Shooter (commercial project 2023-2024)</h3>
+                <p>Outfire is a fast-paced online shooter game. I contributed significantly to its development, including implementing the chat feature and various UI elements.</p>
+                <div class="links">
+                    <a href="https://play.google.com/store/apps/details?id=com.mytona.outgun&hl=en_NZ" target="_blank">Google Play</a> | <a href="https://apps.apple.com/us/app/outfire-battle-royale-shooter/id1453615632" target="_blank">Apple Store</a>
                 </div>
-                
-                <div class="GameTitle"><em>Pathfinder (personal project 2023)</em></div>
-                <div class="GameDownload"><a href="https://github.com/EtherealPtr/VulkanPathfinder" target="_blank">Download source</a> | <a href="https://dl.dropboxusercontent.com/s/ngx59n1agrhcymb/VulkanPathfinder-RonyHanna.zip?dl=0" target="_blank">Play now (.exe)</a></div>
-
-                <p>A 2D application written in C++ and the Vulkan API to showcase the A* pathfinding algorithm.</p>
             </div>
-
-            <div class="box">
-                <div class="container">
-                    <a href="https://www.youtube.com/watch?v=HsNVl4pKtI4" target="_blank"><img src="Images/TitanVoyager.jpg" class="container" alt="First-person shooter preview"></a>
+             <div class="project-card">
+                <img src="Images/BansheeDefaultScene.png" alt="Banshee default scene">
+                <h3>Banshee Engine (personal project 2023-2024)</h3>
+                <p>A robust C++ and Vulkan-based 3D rendering engine that I am currently developing in my free time.</p>
+                <div class="links">
+                    <a href="https://github.com/Rony-Hanna/Banshee.git" target="_blank">View Github</a>
                 </div>
-				
-                <div class="GameTitle"><em>Titan Voyager (personal project 2019)</em></div>
-                <div class="GameDownload"><a href="https://github.com/OnixMarble/Titan-Voyager-Custom-Game-Engine" target="_blank">Download source</a> | <a href="https://dl.dropboxusercontent.com/s/6mtvmsnqtm8v628/Titan%20Voyager%20OpenGL%20by%20Rony%20Hanna.zip?dl=0" target="_blank">Play now (.exe)</a></div>
-
+            </div>
+            <div class="project-card">
+                <img src="Images/TitanVoyager.jpg" alt="First-person shooter preview">
+                <h3>Titan Voyager (personal project 2019)</h3>
                 <p>First-person shooter game made in C++ and OpenGL. I developed this game as a personal project in my free time during my final year of university.</p>
+                <div class="links">
+                    <a href="https://www.youtube.com/watch?v=HsNVl4pKtI4" target="_blank">Watch Video</a> | <a href="https://github.com/OnixMarble/Titan-Voyager-Custom-Game-Engine" target="_blank">View Github</a>
+                </div>
             </div>
-
-            <div class="box">
-                <div class="container">
-                    <a href="https://hublix.com/" target="_blank"><img src="Images/Hublix.jpg" class="container" alt="Metaverse app preview"></a>
+            <div class="project-card">
+                <img src="Images/PathfinderVulkan.png" alt="Searching for a path on a grid">
+                <h3>Pathfinder (personal project 2023)</h3>
+                <p>A 2D application written in C++ and the Vulkan API to showcase the A* pathfinding algorithm.</p>
+                <div class="links">
+                    <a href="https://github.com/EtherealPtr/VulkanPathfinder" target="_blank">View Github</a> | <a href="https://dl.dropboxusercontent.com/s/ngx59n1agrhcymb/VulkanPathfinder-RonyHanna.zip?dl=0" target="_blank">Play now (.exe)</a>
                 </div>
-                
-                <div class="GameTitle"><em>Hublix (professional project 2023)</em></div>
-                <div class="GameDownload"><a href="https://hublix.com/" target="_blank">View website</a></div>
-
-                <p>Hublix is a virtual social platform where users can create and customize their own avatars to interact with others in a virtual world. The app was developed using Unreal Engine 4. I was a member of the software engineering team that worked on various systems within the app including UI, gameplay, and localization.</p>
             </div>
-        </div>
-        <div class="row">
-			<div class="box">
-                <div class="container">
-                    <a href="https://www.youtube.com/watch?v=0pg5qD3wbjo&ab_channel=DiagonalMatrix" target="_blank"><img src="Images/KaisClan.jpg" class="container" alt="Character from 3rd person camera perspective"></a>
+            <div class="project-card">
+                <img src="Images/KaisClan.jpg" alt="Kai's Clan sandbox">
+                <h3>Kai's Clan (commercial project 2020-2021)</h3>
+                <p>An educational AR/VR app made in Unity. Players create their own virtual worlds, import their own 3D models into their worlds to overlay real-world robots, and code their own robots using Python or Blockly to complete challenges.</p>
+                <div class="links">
+                    <a href="https://www.youtube.com/watch?v=AaPU1kQ0WqI" target="_blank">Watch Video</a> | <a href="https://kaisclan.ai/" target="_blank">View website</a>
                 </div>
-				
-                <div class="GameTitle"><em>Kai's Clan (professional project 2020)</em></div>
-                <div class="GameDownload"><a href="https://kaisclan.ai/" target="_blank">View website</a></div>
-
-                <p>An educational AR/VR app made in Unity. Players create their own virtual worlds, import their own 3D models into their worls to overlay real-world robots, and code their own robots using Python or Blockly to complete challenges.</p>
             </div>
-
-            <div class="box">
-                <div class="container">
-                    <a href="https://github.com/TheFearlessHobbit/Slimey-Jump" target="_blank"><img src="Images/SlimeyJump.jpg" class="container" alt="Slime hoping atop of platforms"></a>
+            <div class="project-card">
+                <img src="Images/SlimeyJump.jpg" alt="Slime hoping atop of platforms">
+                <h3>Slimey Jump (personal project 2017)</h3>
+                <p>2D platformer game written in C++ and OpenGL. The game is similar to "Doodle Jump." I made this game in my free time during 2nd year of university as a way to practice graphics programming.</p>
+                <div class="links">
+                    <a href="https://github.com/TheFearlessHobbit/Slimey-Jump" target="_blank">View Github</a> | <a href="https://dl.dropboxusercontent.com/s/ixslnzdqvu14lxw/Slimey%20Jump%20OpenGL%20by%20Rony%20Hanna.zip?dl=0" target="_blank">Play now (.exe)</a>
                 </div>
-                       
-                <div class="GameTitle"><em>Slimey Jump (personal project 2017)</em></div>
-                <div class="GameDownload"><a href="https://github.com/TheFearlessHobbit/Slimey-Jump" target="_blank">Download source</a> | <a href="https://dl.dropboxusercontent.com/s/ixslnzdqvu14lxw/Slimey%20Jump%20OpenGL%20by%20Rony%20Hanna.zip?dl=0" target="_blank">Play now (.exe)</a></div>
-
-                <p>2D platformer game written in C++ and OpenGL. The game is similar to "Doodle Jump." I made this game in my free time during 2nd year of university.</p>
             </div>
-			
-            <div class="box">
-                <div class="container">
-                    <a href="https://github.com/TheFearlessHobbit/Angry-Birds-Box2D" target="_blank"><img src="Images/AngryBirds.jpg" class="container" alt="Bird being flanged"></a>
+            <div class="project-card">
+                <img src="Images/LavaPlaza.jpg" alt="Player knocked by a boulder">
+                <h3>Lava Plaza (university project 2017)</h3>
+                <p>A simple survival game made in Unity where the player avoids falling boulders to survive as long as possible and prevent falling into the lava. As one of the three programmers, I implemented gameplay mechanics and some UI elements.</p>
+                <div class="links">
+                    <a href="https://www.dropbox.com/scl/fi/7w8v7z56fzgp48hnr1leh/Lava-Plaza_1.2_apkcombo.com.apk?rlkey=kmd22st6t1cq8e5rdvazbvgy4&dl=1" target="_blank">Play now (.apk)</a>
                 </div>
-				
-                <div class="GameTitle"><em>Angry Birds (university assignment 2017)</em></div>
-                <div class="GameDownload"><a href="https://github.com/OnixMarble/Angry-Birds-Box2D" target="_blank">Download source</a> | <a href="https://dl.dropboxusercontent.com/s/gc0l3tcz2wp4nmx/Angry%20Birds%20Game%20by%20Rony%20Hanna%20%28Physics%20assignment%29.zip?dl=0" target="_blank">Play now (.exe)</a></div>
-
-                <p>An Angry Birds clone written in C++ and powered by the Box2D physics engine. This game was developed as part of a university physics assignment.</p>
-            </div>
-        </div>
-		<div class="row">
-            <div class="box">
-                <div class="container">
-                    <img src="Images/LavaPlaza.jpg" class="container" alt="Player knocked by a boulder">
-                </div>
-                
-                <div class="GameTitle"><em>Lava Plaza (university assignment 2017)</em></div>
-                <div class="GameDownload"><a href="https://www.dropbox.com/scl/fi/7w8v7z56fzgp48hnr1leh/Lava-Plaza_1.2_apkcombo.com.apk?rlkey=kmd22st6t1cq8e5rdvazbvgy4&dl=1" target="_blank">Play now (.apk)</a></div>
-
-                <p>A simple survival game made in Unity where the player avoids falling boulders to survive as long as possible and prevent falling into the lava. As one of the three programmers, I implemented various gameplay mechanics.</p>
-            </div>
-
-            <div class="box">
-                <div class="container">
-                    <a href="https://kronter.itch.io/district-underground" target="_blank"><img src="Images/DistrictUnderground.jpg" class="container" alt="Third-person hack n' slash preview"></a>
-                </div>
-				
-                <div class="GameTitle"><em>District Underground (university assignment 2018)</em></div>
-                <div class="GameDownload"><a href="https://kronter.itch.io/district-underground" target="_blank">View page</a></div>
-
-                <p>A third-person action game made in Unity. I worked as part of a group consisting of 3 artists and 3 programmers. As one of the three programmers, my primary responsibilities included developing the UI, implementing gameplay mechanics, and designing the boss AI.</p>
-            </div>		
-
-            <div class="box">
-                <!--Add new content-->
-            </div>      
-        </div>
-    </section>
-
-    <section id = "sectionB-Title"><a name="gamejams"></a> Game Jams</section>
-    <section id = "sectionA-Content">
-        <div class="row">
-		    <div class="box">
-                <div class="container">
-                    <a href="https://chemicalschenoby.itch.io/temple-of-misfortune" target="_blank"><img src="Images/ToM.png" class="container" alt="A fun puzzle game"></a>
-                </div>
-
-                <div class="GameTitle"><em>Temple of Misfortune (2022)</em></div>
-                <div class="GameDownload"><a href="https://chemicalschenoby.itch.io/temple-of-misfortune" target="_blank">View page</a> | <a href="https://dl.dropboxusercontent.com/s/6t4whg89yuyx73r/TempleOfMisfortune.zip?dl=0" target="_blank">Play now (.exe)</a></div>
-
-                <p>A puzzle game with an intuitive click-to-move mechanic made for the GMTK Game Jam 2022 (Roll of the Dice). I did all the programming, 3D modeling, and animations for this game.</p>
-            </div>
-            <div class="box">
-                <div class="container">
-                    <a href="https://itch.io/jam/kiwijam-2020/rate/705955" target="_blank"><img src="Images/OnTheBeak.jpg" class="container" alt="Players attempting to knock each other off the slippery iceberg"></a>
-                </div>
-				
-                <div class="GameTitle"><em>On The Beak 2020)</em></div>
-                <div class="GameDownload"><a href="https://itch.io/jam/kiwijam-2020/rate/705955" target="_blank">View page</a> | <a href="https://dl.dropboxusercontent.com/s/505ol5ohu5pi2yi/OnTheBeak.zip?dl=0" target="_blank">Play now (.exe)</a></div>
-
-                <p>A fun local multiplayer game where players play as penguins attempting to knock each other off the slippery iceberg. The game was made during New Zealand's "KiwiJam" where the theme was "On The Brink." I worked as a programmer alongside 2 other developers.</p>
-            </div>
-            <div class="box">
-                <div class="container">
-                    <a href="https://globalgamejam.org/2020/games/helping-hands-9" target="_blank"><img src="Images/HelpingHands.jpg" class="container" alt="A misunderstood racoon"></a>
-                </div>
-
-                <div class="GameTitle"><em>Helping Hands (2020)</em></div>
-                <div class="GameDownload"><a href="https://globalgamejam.org/2020/games/helping-hands-9" target="_blank">View page</a> | <a href="https://dl.dropboxusercontent.com/s/4gz2fjg66q72276/HelpingHandsGGJ2020.zip?dl=0" target="_blank">Play now (.exe)</a></div>
-
-                <p>A puzzle game made during the Global Game Jam 2020 where the theme was "Repair." The player plays as a misunderstood raccoon who wants to demonstrate that he is a helpful citizen by roaming the local town and fixing things.</p>
             </div>
         </div>
     </section>
-
- <footer>
-    <section id = "sectionB-Title"><a name="contact"></a>Contact Me</section>
-    <div class="contact">
-    <p>Feel free to send me a message here: <a href="mailto:Rony.Hanna@outlook.com">Rony.Hanna@outlook.com</a>, I'll do my best to get back to you as soon as possible.</p>
-  </div>
-  <div class="social">
-    <ul class="social-icons">
-      <li><a href="https://github.com/OnixMarble" class="icon-github"></a></li>
-      <li><a href="https://www.linkedin.com/in/ronyhannase/" class="icon-linkedin"></a></li>
-    </ul>
-  </div>
-  <div class="copyRight">
-    <p>&copy; 2023 Rony Hanna. All rights reserved.</p>
-  </div>
-</footer>
- </footer>
+    <section id="game-jams">
+        <h2>Game Jams</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="Images/ToM.png" alt="Player in a temple">
+                <h3>Temple of Misfortune (2022)</h3>
+                <p>A puzzle game with an intuitive click-to-move mechanic that I made for the GMTK Game Jam 2022 (Roll of the Dice). I worked alone and did all the programming, modeling, and animations for this game.</p>
+                <div class="links">
+                    <a href="https://chemicalschenoby.itch.io/temple-of-misfortune" target="_blank">View page</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Images/HelpingHands.jpg" alt="A misunderstood racoon">
+                <h3>Helping Hands (2020)</h3>
+                <p>A puzzle game made during the Global Game Jam 2020 where the theme was "Repair." The player plays as a misunderstood racoon who wants to demonstrate that he is a helpful citizen by roaming the local town and fixing things! I contributed as a gameplay programmer.</p>
+                <div class="links">
+                    <a href="https://globalgamejam.org/2020/games/helping-hands-9" target="_blank">View page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:rony.hanna@outlook.com">rony.hanna@outlook.com</a> or connect with me on <a href="https://www.linkedin.com/in/hannarony" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </footer>
 </body>
 </html>
