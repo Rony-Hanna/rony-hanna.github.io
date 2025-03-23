@@ -81,6 +81,13 @@ h2
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.project-card-invisible
+{
+  background: rgba(0, 0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .project-card:hover 
 {
   transform: translateY(-5px);
